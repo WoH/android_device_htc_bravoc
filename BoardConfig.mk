@@ -28,7 +28,7 @@ USE_CAMERA_STUB := true
 BOARD_NETWORK_TYPE := cdma
 
 # inherit from the proprietary version
--include vendor/htc/bravo/BoardConfigVendor.mk
+-include vendor/htc/bravoc/BoardConfigVendor.mk
 # inherit common defines for all qsd8k devices
 include device/htc/qsd8k-common/BoardConfigCommon.mk
 
