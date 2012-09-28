@@ -13,7 +13,7 @@
 # limitations under the License.
 
 #
-# Input Device Calibration File for the Bravo touch screen.
+# Input Device Calibration File for the Bravoc touch screen.
 #
 # These calibration values are derived from empirical measurements
 # and may not be appropriate for use with other touch screens.

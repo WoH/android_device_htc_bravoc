@@ -241,7 +241,7 @@ static int set_light_battery (struct light_device_t* dev,
 
 static int set_light_attention (struct light_device_t* dev,
 		struct light_state_t const* state) {
-	/* bravo has no attention, bad bravo */
+	/* bravoc has no attention, bad bravoc */
 
 	return 0;
 }
@@ -312,7 +312,7 @@ const struct hw_module_t HAL_MODULE_INFO_SYM = {
 	.version_major = 1,
 	.version_minor = 0,
 	.id = LIGHTS_HARDWARE_MODULE_ID,
-	.name = "Bravo lights module",
+	.name = "Bravoc lights module",
 	.author = "Diogo Ferreira <diogo@underdev.org>",
 	.methods = &lights_module_methods,
 };

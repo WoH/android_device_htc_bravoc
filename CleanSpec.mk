@@ -49,8 +49,8 @@ $(call add-clean-step, find $(PRODUCT_OUT) -name "*.apk" | xargs rm)
 # NEWER CLEAN STEPS MUST BE AT THE END OF THE LIST
 # ************************************************
 $(call add-clean-step, rm -rf $(TARGET_OUT)/build.prop)
-#$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/bravo/obj/SHARED_LIBRARIES/libaudio_intermediates)
-#$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/bravo/obj/SHARED_LIBRARIES/libaudio_intermediates)
-#$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/bravo/obj/STATIC_LIBRARIES/libasound_intermediates)
-#$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/bravo/obj/PACKAGING/systemimage_intermediates)
-#$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/bravo/obj/SHARED_LIBRARIES/libaudio_intermediates)
+#$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/bravoc/obj/SHARED_LIBRARIES/libaudio_intermediates)
+#$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/bravoc/obj/SHARED_LIBRARIES/libaudio_intermediates)
+#$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/bravoc/obj/STATIC_LIBRARIES/libasound_intermediates)
+#$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/bravoc/obj/PACKAGING/systemimage_intermediates)
+#$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/bravoc/obj/SHARED_LIBRARIES/libaudio_intermediates)
