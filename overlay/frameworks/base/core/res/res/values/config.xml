@@ -23,7 +23,7 @@
     config_hardware_automatic_brightness_available is not set, so we will use software implementation -->
     <bool name="config_automatic_brightness_available">true</bool>
 
-    <!-- disable menu hard key on bravo in non-pattern lockscreen -->
+    <!-- disable menu hard key on bravoc in non-pattern lockscreen -->
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
 
     <!-- Flag indicating whether the surface flinger has limited
