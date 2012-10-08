@@ -94,12 +94,6 @@ PRODUCT_COPY_FILES += \
     device/htc/bravoc/vold.fstab:system/etc/vold.fstab \
     device/htc/bravoc/sysctl.conf:system/etc/sysctl.conf
 
-# Prebuilt modules
-ifeq (,$(BUILD_KERNEL))
-PRODUCT_COPY_FILES += \
-    device/htc/bravoc/prebuilt/bcm4329.ko:system/lib/modules/bcm4329.ko
-endif
-
 # media config xml file
 PRODUCT_COPY_FILES += \
     device/htc/bravoc/media_profiles.xml:system/etc/media_profiles.xml
