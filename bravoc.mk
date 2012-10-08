@@ -94,6 +94,10 @@ PRODUCT_COPY_FILES += \
     device/htc/bravoc/prebuilt/vold.fstab:system/etc/vold.fstab \
     device/htc/bravoc/prebuilt/sysctl.conf:system/etc/sysctl.conf
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
+
 # media config xml file
 PRODUCT_COPY_FILES += \
     device/htc/bravoc/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
