@@ -16,5 +16,7 @@ PRODUCT_MODEL   := HTC Desire CDMA
 PRODUCT_MANUFACTURER := HTC
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=bravoc \
-    BUILD_ID=IMM76L
+    BUILD_FINGERPRINT=htc_wwe/htc_bravo/bravo:2.3.3/GRI40/96875.1:user/release-keys \
+    BUILD_VERSION_TAGS=release-keys \
+    PRIVATE_BUILD_DESC="3.14.405.1 CL96875 release-keys" \
+    PRODUCT_NAME=bravoc
