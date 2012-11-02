@@ -50,10 +50,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Second, the aspects that are specific to CDMA
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.home.operator.numeric=310120 \
-    ro.cdma.home.operator.alpha=Sprint \
+    ro.cdma.home.operator.alpha=USCC \
     gsm.sim.operator.numeric=0 \
     gsm.sim.operator.alpha=0 \
-    gsm.sim.operator.iso-country=0
+    gsm.sim.operator.iso-country=0 \
+    ro.ril.def.preferred.network=4 \
+    ro.telephony.default_network=4
 
 # Set default_france.acdb to audio_ctl driver if the ro.cid is HTC__203
 PRODUCT_PROPERTY_OVERRIDES += \
