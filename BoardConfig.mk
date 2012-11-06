@@ -45,9 +45,6 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := bravoc
 # AMSS version to use for GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 1240
 
-# RIL
-# BOARD_USE_NEW_LIBRIL_HTC := true
-
 # Hacks
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
 BOARD_USE_LEGACY_TRACKPAD := true

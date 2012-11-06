@@ -27,39 +27,26 @@ DEVICE_PACKAGE_OVERLAYS := device/htc/bravoc/overlay
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240 \
     rild.libpath=/system/lib/libhtc_ril.so \
-    ro.ril.ecc.HTC-ELL=92,93,94 \
-    ro.ril.ecc.HTC-WWE=999 \
-    ro.ril.enable.a52.HTC-ITA=1 \
-    ro.ril.enable.a53.HTC-ITA=1 \
-    ro.ril.enable.a52=0 \
-    ro.ril.enable.a53=1 \
-    ro.ril.enable.dtm=1 \
-    ro.ril.gprsclass=12 \
-    ro.ril.hsdpa.category=8 \
-    ro.ril.hsupa.category=5 \
-    ro.ril.hsxpa=2 \
+    ro.com.android.dataroaming=true \
+    ro.com.google.locationfeatures=1 \
     ro.ril.def.agps.mode=2 \
     ro.ril.disable.power.collapse=0 \
     windowsmgr.max_events_per_sec=120 \
     mobiledata.interfaces=rmnet0,rmnet1,rmnet2 \
-    ro.media.dec.jpeg.memcap=20000000 \
-    ro.opengles.version=131072 \
-    ro.telephony.ril.v3=signalstrength,singlepdp \
-    ro.vold.umsdirtyratio=20
-
-# Second, the aspects that are specific to CDMA
-PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.home.operator.numeric=310120 \
-    ro.cdma.home.operator.alpha=USCC \
+    ro.cdma.home.operator.alpha=Sprint \
     gsm.sim.operator.numeric=0 \
     gsm.sim.operator.alpha=0 \
     gsm.sim.operator.iso-country=0 \
-    ro.ril.def.preferred.network=4 \
-    ro.telephony.default_network=4
+    ro.media.dec.jpeg.memcap=20000000 \
+    ro.opengles.version=131072 \
+    ro.vold.umsdirtyratio=20
 
-# Set default_france.acdb to audio_ctl driver if the ro.cid is HTC__203
+# Default network type.
+# 0 => WCDMA preferred.
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ril.enable.prl.recognition=1
+   ro.ril.def.preferred.network=4 \
+   ro.telephony.default_network=4
 
 # Set usb type
 ADDITIONAL_DEFAULT_PROPERTIES += \
