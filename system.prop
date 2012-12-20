@@ -1,0 +1,13 @@
+
+#
+# CDMA_BUILD_PROPERTIES
+#
+ro.com.android.dataroaming=true
+ro.com.google.locationfeatures=1
+ro.cdma.home.operator.numeric=310120
+ro.cdma.home.operator.alpha=Sprint
+gsm.sim.operator.numeric=0
+gsm.sim.operator.alpha=0
+gsm.sim.operator.iso-country=0
+ro.ril.def.preferred.network=4
+ro.telephony.default_network=4

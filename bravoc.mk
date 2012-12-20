@@ -23,36 +23,6 @@
 
 DEVICE_PACKAGE_OVERLAYS := device/htc/bravoc/overlay
 
-# Propreties
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240 \
-    rild.libpath=/system/lib/libhtc_ril.so \
-    ro.com.android.dataroaming=true \
-    ro.com.google.locationfeatures=1 \
-    ro.ril.def.agps.mode=2 \
-    ro.ril.disable.power.collapse=0 \
-    windowsmgr.max_events_per_sec=120 \
-    mobiledata.interfaces=rmnet0,rmnet1,rmnet2 \
-    ro.cdma.home.operator.numeric=310120 \
-    ro.cdma.home.operator.alpha=Sprint \
-    gsm.sim.operator.numeric=0 \
-    gsm.sim.operator.alpha=0 \
-    gsm.sim.operator.iso-country=0 \
-    ro.media.dec.jpeg.memcap=20000000 \
-    ro.opengles.version=131072 \
-    ro.vold.umsdirtyratio=20
-
-# Default network type.
-# 0 => WCDMA preferred.
-PRODUCT_PROPERTY_OVERRIDES += \
-   ro.ril.def.preferred.network=4 \
-   ro.telephony.default_network=4
-
-# Set usb type
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    persist.sys.usb.config=mass_storage \
-    persist.service.adb.enable=1
-
 #
 # Packages required for bravoc
 #
