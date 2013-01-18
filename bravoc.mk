@@ -23,6 +23,39 @@
 
 DEVICE_PACKAGE_OVERLAYS := device/htc/bravoc/overlay
 
+# Propreties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=240 \
+    rild.libpath=/system/lib/libhtc_ril.so \
+    ro.ril.ecc.HTC-ELL=92,93,94 \
+    ro.ril.ecc.HTC-WWE=999 \
+    ro.ril.enable.a52.HTC-ITA=1 \
+    ro.ril.enable.a53.HTC-ITA=1 \
+    ro.ril.enable.a52=0 \
+    ro.ril.enable.a53=1 \
+    ro.ril.enable.dtm=1 \
+    ro.ril.gprsclass=12 \
+    ro.ril.hsdpa.category=8 \
+    ro.ril.hsupa.category=5 \
+    ro.ril.hsxpa=2 \
+    ro.ril.def.agps.mode=2 \
+    ro.ril.disable.power.collapse=0 \
+    windowsmgr.max_events_per_sec=120 \
+    mobiledata.interfaces=rmnet0,rmnet1,rmnet2 \
+    ro.media.dec.jpeg.memcap=20000000 \
+    ro.opengles.version=131072 \
+    ro.telephony.default_network=3 \
+    ro.ril.enable.prl.recognition=1 \
+    ro.ril.enable.managed.roaming=1 \
+    ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,120,122,110,119,995 \
+    ro.ril.emc.mode=2 \
+    ro.telephony.ril.v3=signalstrength,singlepdp,apptypesim \
+    ro.vold.umsdirtyratio=20
+
+# Set usb type
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    persist.sys.usb.config=mass_storage \
+    persist.service.adb.enable=1
 #
 # Packages required for bravoc
 #
